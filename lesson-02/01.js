@@ -16,3 +16,12 @@ const hasTemporaryPass = false
 let isAccess
 
 // your code
+
+isAccess =  // проверяем выполнение условий, для получения доступа
+(isAdmin === true || isVerifiedUser === true) && 
+ // есть статус администратора или подтверждённый пользователь
+(hasSpecialPermission === true || hasTemporaryPass === true);
+ // обладает специальным разрешение или временным пропуском
+
+console.log(isAccess);
+

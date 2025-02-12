@@ -17,13 +17,9 @@ let isAccess;
 
 // your code
 
-// isAccess =  // проверяем выполнение условий, для получения доступа
-// (isAdmin === true || isVerifiedUser === true) && 
-//  // есть статус администратора или подтверждённый пользователь
-// (hasSpecialPermission === true || hasTemporaryPass === true);
-//  // обладает специальным разрешение или временным пропуском
-
-isAccess = (isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass);
+isAccess =
+  (isAdmin === true || isVerifiedUser === true) &&
+  (hasSpecialPermission === true || hasTemporaryPass === true);
 
 console.log(isAccess);
 

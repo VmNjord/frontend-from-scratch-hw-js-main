@@ -7,17 +7,14 @@
 const score = Math.floor(Math.random() * 101) // тестовое значение, можно изменять
 let grade
 // your code
-if (score <= 49) {
-    grade = "F"
-} else if 
-(score <= 69 && score >=50) {
-    grade = "D"
-} else if
-(score <= 79 && score >= 70) {
-    grade = "C"
-} else if 
-(score <= 89 && score >= 89) {
-    grade = "B"
-} else
-grade = "A"
+if (49 >= score) {
+    grade = 'F'
+} else if (score >= 50 && 69 >= score) {
+    grade = 'D' 
+} else if (score >= 70 && 79 >= score) {
+    grade = 'C'  
+} else if (score >= 80 && 89 >= score) {
+    grade = 'B'
+} else if (score >= 90 && 100 >= score) 
+    grade = 'A' 
 console.log(`Your score is : ${score}  and your grade is : ${grade}`); // Выводим оценку

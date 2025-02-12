@@ -9,10 +9,9 @@
 
 let dice1 = Math.floor(Math.random() * 7); // your code
 let dice2 = Math.floor(Math.random() * 7);// your code Генерируем случайное число от 1 до 6
-let isWinningDouble = true;
-if (isWinningDouble === dice1 & dice2)// your code  Сравниваем 1 и 2 бросок
+let isWinningDouble = (dice1 === dice2) > 3;// your code  Сравниваем оба броска и соответствие с условием (число больше 3)
 
-
+/*
 console.log('Первый бросок: ' + dice1)
 console.log('Второй бросок: ' + dice2)
 if (isWinningDouble) {
@@ -20,4 +19,4 @@ if (isWinningDouble) {
 } else {
   console.log('Не выигрышный дубль.')
 }
-
+*/

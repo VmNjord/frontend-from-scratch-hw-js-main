@@ -2,9 +2,9 @@
 
 function findLargest(firstValue, secondValue, thirdValue) {
     // ищем большее число
-    if (firstValue > secondValue && secondValue > thirdValue) {
+    if (firstValue >= secondValue && secondValue >= thirdValue) {
         console.log(firstValue);
-    } else if (thirdValue > secondValue && secondValue > firstValue) {
+    } else if (thirdValue >= secondValue && secondValue >= firstValue) {
         console.log(thirdValue);        
     } else {
         console.log(secondValue);

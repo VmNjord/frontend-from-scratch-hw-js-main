@@ -10,7 +10,5 @@ function findLargest(firstValue, secondValue, thirdValue) {
         console.log(secondValue);
     }
     
-}
-
-const largest = findLargest(25, 56, 28);  
-console.log(largest);
+} 
+findLargest(1,2,3)

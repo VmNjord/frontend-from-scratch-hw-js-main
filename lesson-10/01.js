@@ -30,6 +30,10 @@ const model = {
     view.renderMovies(this.movies)
   },
   // your code
+  deletedeleteMovie(id) {
+    this.movies = this.movies.filter(movie => movie.id !== id)
+    view.renderMovies(this.movies)
+  }
 }
 
 const view = {
@@ -51,6 +55,12 @@ const view = {
     })
 
     // your code
+    list.addEventListener('click', (e) => {
+      if (e.target.classList.contains('delete-button')) {
+        const movieId = Number(e.target.parentElement.id)
+        controller.deleteMovie(movieId)
+      }
+    })
   },
   renderMovies(movies) {
     const list = document.querySelector('.list')
@@ -91,6 +101,10 @@ const controller = {
     }
   },
   // your code
+  deleteMovie(movieId) {
+    model.deleteMovie(movieId)
+    view.displayMessage("Фильм успешно удалён!")
+  },
 }
 
 function init() {

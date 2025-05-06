@@ -43,7 +43,8 @@ const view = {
     const form = document.querySelector('.form')
     const inputTitle = document.querySelector('.input-title')
     const inputDescription = document.querySelector('.input-description')
-
+    const list = document.querySelector('.list')
+    
     form.addEventListener('submit', function (event) {
       event.preventDefault()
       const title = inputTitle.value

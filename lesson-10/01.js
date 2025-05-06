@@ -30,7 +30,7 @@ const model = {
     view.renderMovies(this.movies)
   },
   // your code
-  deletedeleteMovie(id) {
+  deleteMovie(id) {
     this.movies = this.movies.filter(movie => movie.id !== id)
     view.renderMovies(this.movies)
   }
@@ -44,7 +44,7 @@ const view = {
     const inputTitle = document.querySelector('.input-title')
     const inputDescription = document.querySelector('.input-description')
     const list = document.querySelector('.list')
-    
+
     form.addEventListener('submit', function (event) {
       event.preventDefault()
       const title = inputTitle.value
